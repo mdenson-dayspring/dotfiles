@@ -1,3 +1,6 @@
+About
+=====
+
 If you are like me I spend a good amount of my working life with at least one *nix 
 command line open. (If you aren’t like me you can stop reading now if you want.)
 
@@ -41,3 +44,12 @@ all of my command lines.
 
 You can fork this repo if you want. Or if you want a more detailed write-up go 
 to [Using Git and Github to Manage Your Dotfiles](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/).
+
+Installation
+============
+
+1. clone this repo into home directory
+2. cd dotfiles
+3. installer/1-packages.sh
+4. installer/2-symlinks.sh
+

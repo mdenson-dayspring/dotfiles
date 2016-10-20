@@ -1,11 +1,14 @@
+git submodule init
+git submodule update
+
 YUM_CMD=$(which yum)
 APT_GET_CMD=$(which apt-get)
 
 if [[ ! -z $YUM_CMD ]]; then
-  yum install stow zsh
+  sudo yum install stow zsh
 
 elif [[ ! -z $APT_GET_CMD ]]; then
-  apt-get stow zsh
+  sudo apt-get stow zsh
 
 else
   echo "error can't install package $PACKAGE"
