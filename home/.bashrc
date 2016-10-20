@@ -17,7 +17,7 @@ alias l.='ls -dF .*'
 alias ll='ls -lF'
 alias ls='ls -F'
 
-if [ -f ~/.bashrc_extra ]; then
-        . ~/.bashrc_extra
+if [ -f ~/.bashrc.local ]; then
+        . ~/.bashrc.local
 fi
 
