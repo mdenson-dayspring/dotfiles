@@ -14,3 +14,7 @@ else
   echo "error can't install package $PACKAGE"
   exit 1;
 fi
+
+if [ -f /etc/profile.d/aws-cli.sh ]; then
+    sudo chmod a-r /etc/profile.d/aws-cli.sh
+fi
