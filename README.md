@@ -15,7 +15,7 @@ On other machines it would be nice sometime too, but I didn’t have a simple wa
 get it to happen so it just still has the default command prompt. Bleh!
 
 Or how about another example, I work with some old boxes and some of them have this 
-command line act like VI instead of Emacs (as God intended, thanks a lot Jason!). So 
+command line act like VI (instead of Emacs as God intended), thanks a lot Jason!. So 
 my Ctrl-R to search through old commands doesn’t just work. So in this case it is a 
 simple one line change, but it irks me just the same.
 
