@@ -1,0 +1,36 @@
+==========================================          ==========================================
+             TMUX COMMAND                                        WINDOW (TAB)
+==========================================          ==========================================
+
+List    tmux ls                                     List         ^a w
+New          -s <session>                           Create       ^a c
+Attach       att -t <session>                       Rename       ^a , <name>
+Rename       rename-session -t <old> <new>          Last         ^a ^a         ^a l (lower-L)
+Kill         kill-session -t <session>              Close        ^a &
+
+==========================================          Goto #       ^a <0-9>
+             CONTROLS                               Next         ^a n
+==========================================          Previous     ^a p
+                                                    Choose       ^a w <name>
+Detach       ^a d
+List         ^a =                                   ==========================================
+Buffer       ^a <PgUpDn>                                         PANE (SPLIT WINDOW)
+Command      ^a : <command>                         ==========================================
+
+Copy         ^a [ ... <space> ... <enter>           Show #       ^a q
+ Moving         vim/emacs key bindings              Split Horiz  ^a -                --------
+ Start          <space>                             Split Vert   ^a |                   |
+ Copy           <enter>                             Pane->Window ^a !
+Paste        ^a ]                                   Kill         ^a x
+
+==========================================          Reorganize   ^a <space>
+             SESSION (Set of Windows)               Expand       ^a <alt><arrow>
+==========================================          Resize       ^a ^<arrow>
+                                                    Resize x n   ^a <n> <arrow>
+New          ^a :new     ^b :new -s <name>
+Rename       ^a $                                   Select       ^a <arrow>
+List         ^a s                                   Previous     ^a {
+Next         ^a (                                   Next         ^a }
+Previous     ^a )                                   Switch       ^a o                  other
+                                                    Swap         ^a ^o
+                                                    Last         ^a ;
