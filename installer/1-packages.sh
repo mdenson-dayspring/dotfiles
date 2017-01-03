@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git submodule init
 git submodule update
 
@@ -8,10 +10,10 @@ if [[ ! -z $YUM_CMD ]]; then
   sudo yum install stow zsh
 
 elif [[ ! -z $APT_GET_CMD ]]; then
-  sudo apt-get stow zsh
+  sudo apt-get install stow zsh
 
 else
-  echo "error can't install package $PACKAGE"
+  echo "error can't install packages"
   exit 1;
 fi
 
