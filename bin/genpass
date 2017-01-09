@@ -1,0 +1,2 @@
+#!/bin/sh
+cat /dev/urandom| tr -dc '0-9a-zA-Z!@#$%^&amp;*_+-'|head -c 30;echo;
