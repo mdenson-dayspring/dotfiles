@@ -1,2 +1,12 @@
 #!/bin/sh
-cat /dev/urandom| tr -dc '0-9a-zA-Z!@#$%^&amp;*_+-'|head -c 30;echo;
+
+# usage: genpass <number of character?
+
+if [ "$1" ]
+then
+    numchars=$1
+else
+    numchars=20
+fi
+
+cat /dev/urandom | tr -dc '0-9a-zA-Z!@#$%^&amp;*_+-' | head -c $numchars;echo;
