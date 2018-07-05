@@ -1,4 +1,4 @@
-path+=(~/dotfiles/bin $path) 
+path=(~/dotfiles/bin $path) 
 
 export PATH
 
