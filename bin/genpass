@@ -9,4 +9,4 @@ else
     numchars=20
 fi
 
-cat /dev/urandom | tr -dc '0-9a-zA-Z!@#$%^&amp;*_+-' | head -c $numchars;echo;
+LC_CTYPE=C tr -dc '0-9a-zA-Z!@#$%^&amp;*_+-' < /dev/urandom | head -c $numchars;echo;
