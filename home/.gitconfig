@@ -1,6 +1,7 @@
 [user]
   name = Matthew Denson
-  email = mdenson@dayspring-tech.com
+  email = mdenson@dayspringpartners.com
+	signingKey = 4375F69DFAE4FF624A8A72AD71BA396A09EE6825
 [apply]
   whitespace=warn
 [color]
@@ -40,3 +41,16 @@
 [core]
   excludesfile = ~/.gitignore
 
+[gpg]
+	program = gpg2
+[tag]
+	forceSignAnnotated = true
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
