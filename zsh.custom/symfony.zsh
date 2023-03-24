@@ -1,6 +1,2 @@
-# aliases for working with symfony
+# aliases for working with symfony in docker container
 
-alias sf="app/console"
-alias pmb="app/console propel:model:build"
-alias mig="app/console propel:migration:migrate"
-alias migdiff="app/console propel:migration:generate-diff"
