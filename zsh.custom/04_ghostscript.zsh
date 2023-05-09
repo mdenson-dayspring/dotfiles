@@ -3,5 +3,5 @@
 # hub.docker.com
 
 gs() {
-    docker run --rm -it -v `pwd`:/app -w /app minidocks/ghostscript "$@" 
+    docker run --rm -it -v "$(pwd)":/app -w /app minidocks/ghostscript "$@"
 }

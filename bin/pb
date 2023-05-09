@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ $# -ne 0 ]; then
+  echo "send stdout to clipboard using iTerm"
+  echo "Usage: pb < file"
+  echo "or:    cat file | pb"
+  exit 1
+fi
+printf '\033]1337;Copy=:'`base64`'\07'

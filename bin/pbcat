@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ $# -ne 1 ]; then
+  echo "cat a file's contents to you clipboard using iTerm"
+  echo "Usage: pbcat file"
+  exit 1
+fi
+for fn in "$@"
+do
+  if [ -r "$fn" ] ; then
+    printf '\033]1337;Copy=:'
+    base64 < "$fn"
+    printf '\07'
+  else
+    echo File $fn does not exist or is not readable.
+  fi
+done
